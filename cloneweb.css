@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: rgb(10, 10, 85);
+  --secondary-text-color: rgb(21, 21, 124);
+  --accent-color: rgb(28, 28, 174);
+  --accentprimary-dark-color: rgb(9, 9, 70);
+  --padding-inline-section: 20px;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: var(--primary-text-color);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.25rem;
+  columns: var(--secondary-text-color);
+  line-height: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+/*predefined things */
+
+
+/* utlity classes */
+.small-bold-text {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.container {
+  /* full Container */
+  max-width: 1080px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.hover-link {
+  /* all hover properties */
+  color: var(--primary-text-color);
+  transition: 0.3s ease-out;
+}
+
+.hover-link:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.pri-button {
+  /* sign up button */
+  background-color: var(--accent-color);
+  border-radius: 6px;
+  font-weight: 700;
+  color: white !important;
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+}
+
+.pri-button:hover {
+  /* sign up button hovering properties */
+  background-color: var(--accentprimary-dark-color);
+  text-decoration: none !important;
+}
+
+.sec-button {
+  /* sign in button */
+  background-color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  color: rgb(6, 6, 67) !important;
+  padding: 12px 24px;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+}
+
+.sec-button:hover {
+  /* sign in button hovering properties */
+  background-color: rgb(93, 101, 211);
+  text-decoration: none !important;
+}
+
+.top-banner {
+  /* headline banner container */
+  background-color: #4fb3d4;
+}
+
+.banner-text {
+  /* headline banner text */
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.main-nav {
+  /* navigation part */
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.company-logo img {
+  width: 200px;
+}
+
+.nav-links {
+  flex-basis: 730px;
+}
+
+.nav-links ul {
+  /* Nav parts at the end with gap of 40px with each other */
+  justify-content: end;
+  gap: 40px;
+}
+.nav-toggle{
+  display: none;
+}
+
+/* Header Section */
+
+.para {
+  /* header left side */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px 20px 20px 0px;
+
+}
+
+header {
+  padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section {
+  justify-content: center;
+  gap: 50px;
+}
+
+.header-right img {
+  width: 400px;
+}
+
+.gs {
+  /* get started button */
+  margin: 20px;
+}
+
+/* section part */
+
+.companies-header {
+  text-align: center;
+  margin: 50px;
+}
+
+.logo {
+  width: 600px;
+  position: relative;
+  left: 200px;
+  bottom: 50px;
+}
+
+/* features section */
+.feature-section {
+  padding: 80px var(--padding-inline-section) 0;
+}
+
+.features-header {
+  text-align: center;
+}
+
+h2 {
+  margin: 40px;
+}
+
+.lastclass {
+  height: 500px;
+}
+
+.features-area {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+  gap: 40px;
+}
+
+.features-card {
+  flex-direction: column;
+  gap: 15px;
+  max-width: 30%;
+  text-align: center;
+}
+
+
+/* big feature section */
+.big-features-container {
+  gap: 30px;
+}
+
+.img {
+  margin-top: 100px;
+  width: 400px;
+  height: 400px;
+}
+
+.feature-desc {
+  flex-direction: column;
+}
+
+.feature-desc h3 {
+  margin: 20px;
+  font-size: 2rem;
+  text-align: center;
+
+}
+
+.feature-desc h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 20px;
+}
+
+/* example section */
+.container-example {
+  text-align: center;
+}
+
+.container-example h2 {
+  margin: 50px 0 30px 0;
+}
+
+.example-area {
+  margin: 100px 0 0 0;
+  width: 1300px;
+  justify-content: space-between;
+  position: relative;
+  left: 120px;
+  flex-wrap: wrap;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+}
+
+
+.example-card {
+  width: 23%;
+  position: relative;
+  min-height: 300px;
+  background: black;
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(/images/ex1.jpg);
+  background-size: cover;
+}
+
+.example-card:hover {
+  box-shadow: 0 0 10px #323131;
+  transition: 0.2s ease-out;
+}
+
+.example-card1 {
+  width: 23%;
+  position: relative;
+  min-height: 300px;
+  background: black;
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(/images/ex2.jpg);
+  background-size: cover;
+}
+
+.example-card1:hover {
+  box-shadow: 0 0 10px #323131;
+  transition: 0.2s ease-out;
+}
+
+.example-card2 {
+  width: 23%;
+  position: relative;
+  min-height: 300px;
+  background: black;
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(/images/ex5.jpg);
+  background-size: cover;
+}
+
+.example-card2:hover {
+  box-shadow: 0 0 10px #323131;
+  transition: 0.2s ease-out;
+}
+
+.example-card3 {
+  width: 23%;
+  position: relative;
+  min-height: 300px;
+  background: black;
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(/images/ex4.jpg);
+  background-size: cover;
+}
+
+.example-card3:hover {
+  box-shadow: 0 0 10px #323131;
+  transition: 0.2s ease-out;
+}
+
+/* cta section */
+
+.cta-section {
+  background-color: rgb(39, 39, 106);
+}
+
+
+.cta-container {
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 40px;
+}
+
+.cta-container h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.cta-container p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+.cta-container a {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.cta-button {
+  color: black !important;
+  background-color: azure;
+}
+
+.cta-button:hover {
+  background-color: rgb(226, 209, 187);
+  text-decoration: underline;
+}
+
+/* footer section */
+
+footer {
+  padding-block: 80px;
+  background-color: rgb(231, 235, 238);
+}
+
+.link-coloumn {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-container {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* subfooter */
+
+.subfooter {
+  background-color: aliceblue;
+  padding: 30px;
+}
+
+.subfooter-container {
+  justify-content: center;
+  gap: 40px;
+}
+
+
